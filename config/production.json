@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://zain:zain@tddd27project.v1ahf.mongodb.net/Sharingo?retryWrites=true&w=majority",
+    "mongoURI": "mongodb://mongo:27017/Sharingo",
     "jwtSecret": "U2hhcmluZ29KV1RTZWNyZXQ=",
     "cloudinaryName": "sharingo",
     "cloudinaryAPI": "196285225186376",
