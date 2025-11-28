@@ -43,7 +43,20 @@ const UpdateProfile = ({
       graduationDate:
         !isLoaded || !profile.education ? "" : profile.education.graduationDate,
     });
-  }, [isLoaded, getCurrentProfileAction]);
+  }, [
+    isLoaded,
+    getCurrentProfileAction,
+    profile.bio,
+    profile.city,
+    profile.country,
+    profile.dateOfBirth,
+    profile.education,
+    profile.gender,
+    profile.hobbies,
+    profile.image,
+    profile.phone,
+    profile.socialMedia,
+  ]);
   const [imageState, setImageState] = useState("");
   const [previewSource, setPreviewSource] = useState("");
 

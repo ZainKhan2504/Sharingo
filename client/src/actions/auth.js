@@ -56,7 +56,7 @@ export const signUpAction =
       });
       dispatch(loadUser());
     } catch (err) {
-      const error = err.response.data.message;
+      const error = err.response?.data?.message;
       if (error) alertify.notify(error, "error", 3);
 
       dispatch({
@@ -90,7 +90,7 @@ export const signInAction =
       });
       dispatch(loadUser());
     } catch (err) {
-      const error = err.response.data.message;
+      const error = err.response?.data?.message;
       if (error) alertify.notify(error, "error", 3);
 
       dispatch({
@@ -129,7 +129,7 @@ export const changePasswordAction =
       dispatch({ type: CHANGE_PASSWORD });
       alertify.notify(response.data.message, "success", 3);
     } catch (err) {
-      const error = err.response.data.message;
+      const error = err.response?.data?.message;
       if (error) alertify.notify(error, "error", 3);
     }
   };
